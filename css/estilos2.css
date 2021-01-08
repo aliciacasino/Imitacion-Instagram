@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.3em;
+}
+h1, h2 {
+    display: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background-color: #808080;
+}
+#publicacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+div.fotografia {
+    width: 500px;
+}
+div.fotografia img {
+    width: 500px;
+    object-fit: cover;
+}
+div.comentarios {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+}
+dl {
+    margin-left: 60px;
+}
+dt, span {
+    font-weight: bold;
+    color: #2C3E50;
+}
+dd {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+dl dt img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    right: 30px;
+    top: 20px;
+}
+div.comentarios div.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+div.comentarios div.iconos ul {
+    display: flex;
+    margin: 0 30px;
+}
+div.comentarios div.iconos ul li {
+    margin-right: 10px;
+}
+section p {
+    margin-left: 30px;
+    font-size: 0.8em;
+}
+section p.fecha {
+    color: grey
+}
+section p:last-child {
+    color:grey;
+    margin-top: 22px;
+}
+@media (max-width: 904px) {
+    main {
+        margin: 10%;
+    }
+    #publicacion {
+        display: block;
+    }
+    div.fotografia, div.comentarios {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.fotografia img {
+        width: 100%;
+        height: auto;
+    }
+    div.comentarios div.iconos ul {
+        margin-right: 10px;
+    }
+}
+footer {
+    background: linear-gradient(to top, #000000 0%, #454545 100%);
+}
+@media (min-width: 905px) {
+    footer {
+        position:absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+footer p {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

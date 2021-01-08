@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+main {
+    margin-left: auto;
+    margin-right: auto;  
+}
+h2 {
+    display: none;
+}
+/*CABECERA*/
+header {
+    border-bottom: 1px solid lightgrey;
+}
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 8px 0;
+}
+header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li span {
+    font-size: 0.9em;
+    color: grey;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px 70px;
+}
+header nav ul li span img {
+    margin-right: 20px;
+}
+header a.sesion:link, header a.sesion:visited, header a.sesion:hover {
+    color: white;
+    background-color: #2E9AFE;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+header a.sesion:active {
+    color: black;
+    background-color: #2ECCFA;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+header a.registrarse:link, header a.registrarse:visited, header a.registrarse:hover {
+    color: #2E9AFE;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a.registrarse:active {
+    color: #2ECCFA;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    header nav ul li span {
+        display: none;
+    }
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr 0 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*FIN CABECERA*/
+
+
+
+/*Foto de perfil y descripción*/
+section.perfil-descripcion {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+div.perfil {
+    justify-self: end;
+}
+div.descripcion {
+    justify-self: start;
+    padding: 20px;
+    margin-left: 100px;
+}
+div.perfil img {
+    margin: 20px auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    background: linear-gradient(45deg, rgba(255,140,0,1) 0%, rgba(221,0,255,1) 100%);
+    object-fit: cover;
+}
+div.descripcion p:first-child {
+    font-size: 1.5em;
+    color: #585858;
+    margin: 25px 0;
+}
+div.descripcion ul li {
+    display: inline-block;
+    color: #585858;
+    margin-bottom: 15px;
+    margin-right: 30px;
+}
+div.descripcion ul li span, div.descripcion p:last-child {
+    color: #585858;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    div.perfil {
+        align-self: center;
+    }
+    div.descripcion {
+        margin: 0;
+    }
+    div.descripcion ul li {
+        display: block;
+    }
+    section.perfil-descripcion {
+        display: flex;
+        justify-content: center;
+    }
+}
+/*FIN de foto de perfil y descripción*/
+
+
+
+/*Historias*/
+div.historias ul {
+    text-align: center;
+}
+section div.historias ul.redondas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+div.historias ul.redondas li div div {
+    display: inline-block;
+    background-color: #dbe2ef;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 0 15px;
+}
+div.historias ul.redondas li div div img {
+    position: relative;
+    top: 15px;
+}
+div.historias ul.redondas li div p {
+    margin-top: 10px;
+}
+/*FIN Historias*/
+
+
+
+/*Menú publicaciones, IGTV, etiquetadas*/
+div.submenu {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.submenu ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid lightgrey;
+    padding: 15px;
+}
+div.submenu ul li {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #585858;
+}
+/*FIN Menú publicaciones, IGTV, etiquetadas*/
+
+
+
+/*Fotos*/
+section.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.fotos div {
+    margin: 25px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+section.fotos div img {
+    position: relative;
+    right: 55px;
+}
+/*FIN fotos*/
+
+
+
+footer {
+    background: linear-gradient(to top, #000000 0%, #454545 100%);
+}
+footer p {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
